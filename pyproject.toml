@@ -1,0 +1,38 @@
+[project]
+name = "rufftemplate"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13.5"
+
+
+[dependency-groups]
+dev = [
+ "ruff>=0.14.14",
+ "ty>=0.0.14",
+]
+
+
+[tool.ruff]
+line-length = 88
+indent-width = 4
+src = ["src", "app"]
+
+
+[tool.ruff.lint]
+select = ["E", "F", "I"] # I - isort правила для импортов
+fixable = ["ALL"]
+unfixable = []
+
+
+[tool.ruff.lint.isort]
+known-first-party = ["core", "message_handler"]
+lines-after-imports = 2
+
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
+docstring-code-format = true
+docstring-code-line-length = 88

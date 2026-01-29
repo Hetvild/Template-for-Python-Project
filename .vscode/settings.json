@@ -1,0 +1,29 @@
+{
+    // Глобальные настройки для всех языков
+    "editor.fontSize": 13,
+    "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.letterSpacing": 0.3,
+    "editor.lineHeight": 1.2,
+    "editor.fontWeight": "normal",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "python.terminal.activateEnvironment": true,
+    "files.encoding": "utf8",
+    "files.autoGuessEncoding": false,
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.ruff": "explicit",
+            "source.organizeImports.ruff": "explicit"
+        },
+    },
+    "[markdown]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.markdownlint": "explicit"
+        }
+    },
+}
